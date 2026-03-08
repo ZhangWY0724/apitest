@@ -68,6 +68,51 @@ body {
   font-size: 13px;
 }
 
+.panel-footnote {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #eef2f7;
+}
+
+.footnote-heading {
+  margin: 0 0 10px;
+  color: #38445d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footnote-card {
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  background: #f7f9fc;
+  border: 1px solid #e8edf5;
+  border-radius: 10px;
+}
+
+.footnote-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #38445d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footnote-link {
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.footnote-text {
+  margin: 0 0 6px;
+  color: #5e6a85;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footnote-text-last {
+  margin-bottom: 0;
+}
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;

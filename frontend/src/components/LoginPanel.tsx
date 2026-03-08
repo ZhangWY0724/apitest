@@ -77,6 +77,27 @@ export function LoginPanel({
       </Form>
 
       <div className="meta-line">当前会话: {isLoggedIn ? sessionId : "未登录"}</div>
+
+      <div className="panel-footnote">
+        <Typography.Paragraph className="footnote-heading">开源与声明</Typography.Paragraph>
+
+        <div className="footnote-card">
+          <Typography.Text className="footnote-label">源码地址</Typography.Text>
+          <Typography.Link className="footnote-link" href="https://github.com/ZhangWY0724/apitest" target="_blank" rel="noreferrer">
+            GitHub · ZhangWY0724/apitest
+          </Typography.Link>
+        </div>
+
+        <div className="footnote-card">
+          <Typography.Text className="footnote-label">免责声明</Typography.Text>
+          <Typography.Paragraph className="footnote-text">
+            本站仅提供自助测试工具界面，不存储、不分发、不托管任何账号、密钥、Token 或第三方平台数据。
+          </Typography.Paragraph>
+          <Typography.Paragraph className="footnote-text footnote-text-last">
+            站点实现与行为均可通过开源仓库源码自行审阅；使用者需自行确认输入信息、目标服务及相关操作的合规性与风险。
+          </Typography.Paragraph>
+        </div>
+      </div>
     </section>
   );
 }
