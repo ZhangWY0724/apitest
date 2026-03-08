@@ -1,7 +1,7 @@
 import type { AccountsQuery, AccountsResponse, LoginResponse, PlatformType } from "./types";
 
-// 通过 Vite 环境变量注入，本地开发默认 127.0.0.1:8000
-const BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+// 生产环境默认走同域 /api，开发环境默认直连本地后端
+const BASE_URL = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "http://127.0.0.1:8000" : "");
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
