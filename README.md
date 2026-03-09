@@ -3,6 +3,7 @@
 ## 技术栈
 - 后端：FastAPI + Requests
 - 前端：React + Vite + Ant Design
+- 单脚本简易版：Python
 
 ## 当前结构
 - `backend/app.py`：接口入口与路由编排
@@ -13,6 +14,7 @@
 - `frontend/src/App.tsx`：页面状态编排
 - `frontend/src/components/`：登录区、工具栏、表格、弹窗组件
 - `frontend/src/utils/account.ts`：账号视图工具函数
+- `main.py`：单脚本命令行版本，无前端
 
 ## 启动方式
 
@@ -28,6 +30,10 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 cd frontend
 npm install
 npm run dev
+```
+### 3. 单脚本启动
+```bash
+python main.py
 ```
 
 前端默认请求后端地址：`http://127.0.0.1:8000`
